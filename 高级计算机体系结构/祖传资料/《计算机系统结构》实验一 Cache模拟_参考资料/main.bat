@@ -1,0 +1,1 @@
+main < gcc.trace > x.txt

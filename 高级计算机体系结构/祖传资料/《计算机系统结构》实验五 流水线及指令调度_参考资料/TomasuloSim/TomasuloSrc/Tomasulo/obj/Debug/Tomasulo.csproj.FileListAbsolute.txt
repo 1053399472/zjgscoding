@@ -1,0 +1,11 @@
+C:\Users\liron.MATEAM\Desktop\מחוץ לעבודה\TomasuloReal\TomasuloSrc\Tomasulo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\liron.MATEAM\Desktop\מחוץ לעבודה\TomasuloReal\TomasuloSrc\Tomasulo\obj\Debug\Tomasulo.InitRegisters.resources
+C:\Users\liron.MATEAM\Desktop\מחוץ לעבודה\TomasuloReal\TomasuloSrc\Tomasulo\obj\Debug\Tomasulo.Main.resources
+C:\Users\liron.MATEAM\Desktop\מחוץ לעבודה\TomasuloReal\TomasuloSrc\Tomasulo\obj\Debug\Tomasulo.Properties.Resources.resources
+C:\Users\liron.MATEAM\Desktop\מחוץ לעבודה\TomasuloReal\TomasuloSrc\Tomasulo\obj\Debug\Tomasulo.FuncuinalUnitsUsageForm.resources
+C:\Users\liron.MATEAM\Desktop\מחוץ לעבודה\TomasuloReal\TomasuloSrc\Tomasulo\obj\Debug\Tomasulo.csproj.GenerateResource.Cache
+C:\Users\liron.MATEAM\Desktop\מחוץ לעבודה\TomasuloReal\TomasuloSrc\Tomasulo\bin\Debug\Tomasulo.exe
+C:\Users\liron.MATEAM\Desktop\מחוץ לעבודה\TomasuloReal\TomasuloSrc\Tomasulo\bin\Debug\Tomasulo.pdb
+C:\Users\liron.MATEAM\Desktop\מחוץ לעבודה\TomasuloReal\TomasuloSrc\Tomasulo\bin\Debug\TextFileToDataTable.dll
+C:\Users\liron.MATEAM\Desktop\מחוץ לעבודה\TomasuloReal\TomasuloSrc\Tomasulo\obj\Debug\Tomasulo.exe
+C:\Users\liron.MATEAM\Desktop\מחוץ לעבודה\TomasuloReal\TomasuloSrc\Tomasulo\obj\Debug\Tomasulo.pdb

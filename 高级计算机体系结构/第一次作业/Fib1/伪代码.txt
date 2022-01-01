@@ -1,0 +1,29 @@
+fib(n,f0 = 0, f1= 1){
+   if (n == 0)
+     return f0
+   return fib(n-1, f1, f0+f1)
+}
+
+state_0: continue <-state_done		[continue=4]
+	n <-n_in			[sel_n(1),load_n]
+	f0 <- f0_in		[sel_f0(0),load_f0]
+	f1 <- f1_in		[sel_f1(0),load_f1]
+	if start ==1 goto state_1	
+	else goto state_0
+state_1: 
+	if n==0 goto state_n0_4
+	else goto state_2
+state_2: 
+	n=n-1,		[sel_n(0),load_n]
+	temp=f0,		[load_temp]
+	f0=f1,		[sel_f0(),load_f0]
+	goto state_3
+state_3:
+	f1=f1+temp 	[sel_f1,load_f1]
+	goto state_1
+state_n0_4:
+	res=f0		[load res]
+	goto(continue)	
+state_done_5:
+	finish<-1
+

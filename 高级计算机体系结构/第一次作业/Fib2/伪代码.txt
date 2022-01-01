@@ -1,0 +1,35 @@
+state_0:
+continue <- state_done		[sel_continue（值=8）、load_continue=1]
+	n <-n_in						[sel_n(0)、load_n=1]
+	if start ==1 goto state_1		[next_state=1]
+	else goto state_0				[next_state=0]
+state_1:
+if n < 2 goto state_fib_nless2	[next_state=4]
+	else goto state_2				[next_state=2]
+state_2:
+	save continue				[sel_statck1(1)、stack1_push]
+goto state_3					[next_state=3]
+State_3
+	save n-2(stack1)				[sel_statck1(2)、stack1_push]
+continue <- state_add			[sel_continue(值=5)、load_continue]
+	n=n-1						[sel_n(2)、load_n]
+	goto(state_1)				[next_state=1]
+state_fib_nless2_4:
+res<-n						[sel_res(1)、load_n]
+	goto(continue)				[next_state=continue]
+state_add_5:
+stack_n<-res					[stack2_push]
+	restore n						[sel_n(1)、load_n]
+	pop()						[pop_stack1]
+	continue <- cal_res			[continue=6]
+	goto(state_1)				[next_state=1]
+State_7_before_6:
+restore(continue)				[sel_continue(3)、load(continue)]
+Pop()						[pop_stack1]
+goto(7)						[next_state=7]
+cal_res_7:
+res=stack_n.top+res			[sel_res(0)、load_res]
+	stack_n.pop()				[stack2_pop]
+	goto(continue)				[next_state=continue]
+State_done_8:
+finish <-1(结束)				[finish=1]
