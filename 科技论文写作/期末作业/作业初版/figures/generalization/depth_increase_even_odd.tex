@@ -1,0 +1,72 @@
+% This file was created by matplotlib2tikz v0.6.17.
+\begin{tikzpicture}
+
+\definecolor{color1}{rgb}{0.83921568627451,0.152941176470588,0.156862745098039}
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+
+\begin{axis}[
+xlabel={embedded depth},
+ylabel={error rate},
+xmin=-0.15, xmax=23,
+ymin=-0.0249906967827783, ymax=0.54713235377034,
+width=\figurewidth,
+height=\figureheight,
+ytick={0,0.1,0.2,0.3,0.4,0.5},
+tick align=outside,
+tick pos=left,
+x grid style={lightgray!92.02614379084967!black},
+y grid style={lightgray!92.02614379084967!black}
+]
+\addplot [very thick, color0, mark=x, mark size=3, mark options={solid}, forget plot]
+table {%
+2 0.0395812349296463
+4 0.126885914766741
+6 0.255980653130818
+8 0.280518837120274
+10 0.321648199053476
+12 0.385987261146497
+14 0.446351691361476
+16 0.477889400056333
+18 0.506163615988046
+20 0.489519112207152
+22 0.504009163802978
+24 0.52112676056338
+26 0.440860215053763
+28 0.64
+30 0.4
+32 0
+};
+\addplot [very thick, color1, mark=x, mark size=3, mark options={solid}, forget plot]
+table {%
+1 0.00101489642418162
+3 0.00297947291313438
+5 0.00421100551983156
+7 0.0159726636999364
+9 0.0369828456104945
+11 0.0776109869051421
+13 0.145334146553977
+15 0.219062368013515
+17 0.319633507853403
+19 0.397016637980493
+21 0.466045272969374
+23 0.48
+25 0.614285714285714
+27 0.545454545454545
+29 0.5
+39 1
+};
+\draw[] (axis cs:12,0.446351691361476) -- (axis cs:12,0.446351691361476);
+\node at (axis cs:12,0.416351691361476)[
+  anchor=south east,
+  text=color0,
+  rotate=0.0
+]{ out-of-sample};
+\draw[] (axis cs:15,0.135334146553977) -- (axis cs:15,0.135334146553977);
+\node at (axis cs:15,0.165334146553977)[
+  anchor=north west,
+  text=color1,
+  rotate=0.0
+]{ in-sample};
+\end{axis}
+
+\end{tikzpicture}
